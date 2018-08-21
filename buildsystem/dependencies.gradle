@@ -1,0 +1,81 @@
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+
+    }
+}
+
+ext{
+    /**
+     * LIBRARIES
+     * */
+
+    supportLibraryVersion = '27.1.1'
+
+    rxJavaVersion = '2.1.0'
+    rxAndroidVersion = '2.0.1'
+    retrofitVersion = '2.3.0'
+    gsonVersion = '2.7'
+    gsonConverterVersion = '2.1.0'
+    rxBindingVersion = '2.0.0'
+
+    glideVersion = '4.6.1'
+    glideTransformationVersion = '3.0.1'
+
+    daggerVersion = '2.12'
+
+    stethoVersion = '1.5.0'
+
+    moxyVersion = '1.5.3'
+
+    butterKnifeVersion = '8.8.1'
+
+    circleindicatorVersion = '1.2.2@aar'
+
+    fragmentNavigationVersion = '2.4.0'
+
+    badgeViewVersion = '1.1.3'
+
+    appDependency = [
+            supportAppCompat:       "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            supportDesign:          "com.android.support:design:${supportLibraryVersion}",
+            supportVectorDravable:  "com.android.support:support-vector-drawable:${supportLibraryVersion}",
+            supportVectorAnimation: "com.android.support:animated-vector-drawable:${supportLibraryVersion}",
+            cardView:               "com.android.support:cardview-v7:${supportLibraryVersion}",
+
+            rxJava:                 "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid:              "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxBinding:              "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxBindingVersion}",
+
+            gsonConverter:          "com.squareup.retrofit2:converter-gson:${gsonConverterVersion}",
+            gson:                   "com.google.code.gson:gson:${gsonVersion}",
+
+            retrofit:               "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitRxCallAdapter:  "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+            glide:                  "com.github.bumptech.glide:glide:${glideVersion}",
+            glideAnnotationProccessor: "com.github.bumptech.glide:compiler:${glideVersion}",
+            glideTransformation:    "jp.wasabeef:glide-transformations:${glideTransformationVersion}",
+
+            dagger:                 "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerProccessor:       "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            daggerCompiler:         "com.google.dagger:dagger-compiler:${daggerVersion}",
+
+            stetho:                 "com.facebook.stetho:stetho:${stethoVersion}",
+            stethoInterceptor:      "com.facebook.stetho:stetho-okhttp3:${stethoVersion}",
+
+            moxy:                   "com.arello-mobile:moxy:${moxyVersion}",
+            moxyAnnotationProcessor:"com.arello-mobile:moxy-compiler:${moxyVersion}",
+            moxyAndroid:            "com.arello-mobile:moxy-app-compat:${moxyVersion}",
+
+            butterKnife:            "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifeAnnotationProcessor:"com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            circleIndicator:        "me.relex:circleindicator:${circleindicatorVersion}",
+
+            fragmentNavigation:     "com.ncapdevi:frag-nav:${fragmentNavigationVersion}",
+
+            badgeView:              "q.rorbin:badgeview:${badgeViewVersion}",
+    ]
+}

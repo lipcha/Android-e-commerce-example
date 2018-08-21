@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivBannerIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@drawable/ic_error"
+            android:layout_marginStart="8dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBannerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            style="@style/TextStyle.SubTitle.Small"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/vBannerColorIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorRed"/>
+
+</LinearLayout>

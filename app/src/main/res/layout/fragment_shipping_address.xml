@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llAddressContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <com.foxkiev.app.ui.custom_views.EditTextWrapper
+                android:id="@+id/tilEmailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCustomerEmail"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email_address"
+                    android:drawablePadding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"/>
+            </com.foxkiev.app.ui.custom_views.EditTextWrapper>
+
+            <com.foxkiev.app.ui.custom_views.EditTextWrapper
+                android:id="@+id/tilFirstNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCustomerFirstName"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_first_name"
+                    android:drawablePadding="8dp"/>
+            </com.foxkiev.app.ui.custom_views.EditTextWrapper>
+
+            <com.foxkiev.app.ui.custom_views.EditTextWrapper
+                android:id="@+id/tilLastNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCustomerLastName"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_last_name"
+                    android:drawablePadding="8dp"/>
+            </com.foxkiev.app.ui.custom_views.EditTextWrapper>
+
+            <com.foxkiev.app.ui.custom_views.EditTextWrapper
+                android:id="@+id/tilPhoneNumberWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCustomerPhoneNumber"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_phone_number"
+                    android:drawablePadding="8dp"
+                    android:inputType="phone"/>
+            </com.foxkiev.app.ui.custom_views.EditTextWrapper>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCountry"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:text="@string/title_default_country"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCity"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_city" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvWarehouse"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_warehouse" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/Button.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_name_next" />
+        </LinearLayout>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.foxkiev.app.ui.custom_views.ErrorView
+            android:id="@+id/errorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:message="@string/message_no_internet_connection"
+            app:icon="@drawable/ic_error"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</ScrollView>

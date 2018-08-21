@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="product_list_product_image_size">88dp</dimen>
+    <dimen name="notification_list_image_size">56dp</dimen>
+    <dimen name="product_image_corner">4dp</dimen>
+    <dimen name="button_default_corner">4dp</dimen>
+
+    <dimen name="badge_size">18dp</dimen>
+
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="default_drawable_padding">10dp</dimen>
+</resources>

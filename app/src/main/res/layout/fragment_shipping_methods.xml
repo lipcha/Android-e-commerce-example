@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/llShippingMethodsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:visibility="gone">
+                <com.foxkiev.app.ui.custom_views.ShippingMethodsRadioGroup
+                    android:id="@+id/rgShippingMethods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    style="@style/Button.Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/btn_name_next" />
+            </LinearLayout>
+
+            <android.support.v4.widget.ContentLoadingProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <com.foxkiev.app.ui.custom_views.ErrorView
+                android:id="@+id/errorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:message="@string/message_no_internet_connection"
+                app:icon="@drawable/ic_error"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+</FrameLayout>

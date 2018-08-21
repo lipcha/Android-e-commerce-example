@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FixedAspectRatioFrameLayout" >
+        <attr name="aspectRatioWidth" format="integer"/>
+        <attr name="aspectRatioHeight" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ErrorView">
+        <attr name="message" format="reference"/>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="custom_navigation_bottom_bar">
+        <attr name="badge" format="reference" />
+    </declare-styleable>
+
+</resources>

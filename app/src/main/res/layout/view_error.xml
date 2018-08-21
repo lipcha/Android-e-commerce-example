@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivErrorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        tools:text="@string/error_check_internet_connection"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvOriginalError"
+        style="@style/TextStyle.SubTitle.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:textAlignment="center"
+        tools:text="NullPointerException" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnReload"
+        style="@style/Button.Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_name_try_again"/>
+</LinearLayout>

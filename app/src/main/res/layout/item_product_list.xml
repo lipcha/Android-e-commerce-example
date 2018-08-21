@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/product_image_corner"
+    android:elevation="4dp"
+    android:layout_margin="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <FrameLayout
+            android:layout_width="@dimen/product_list_product_image_size"
+            android:layout_height="@dimen/product_list_product_image_size">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle.SubTitle.Small"
+                tools:text="some product"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <com.foxkiev.app.ui.custom_views.PriceTextView
+                    android:id="@+id/tvProductSpecialPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle.Title.Small"
+                    android:textStyle="bold"
+                    android:paddingEnd="8dp"
+                    tools:text="1000$"/>
+
+                <com.foxkiev.app.ui.custom_views.PriceTextView
+                    android:id="@+id/tvProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle.Title.Small"
+                    tools:text="1000$"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_product_sku"
+                    android:paddingRight="6dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvProductSku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginBottom="2dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/messageProductNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProductBannerInfo"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:background="@drawable/background_new_product_banner"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/product_message_new" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProductBannerInfo"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/background_stock_product_banner"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/product_message_stock"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/messageNotAvailableProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProductBannerInfo"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/background_not_available_product_banner"
+                    android:text="@string/product_message_not_available" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.foxkiev.app.ui.custom_views.EditTextWrapper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etWarehouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_warehouse"
+            style="@style/EditText"
+            android:drawablePadding="8dp"/>
+    </com.foxkiev.app.ui.custom_views.EditTextWrapper>
+    <include layout="@layout/layout_list"/>
+</LinearLayout>
